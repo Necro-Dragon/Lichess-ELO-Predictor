@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lichess March 2026 game speed mix</title>
+  <desc id="desc">Lichess March 2026 game speed mix</desc>
+  <defs>
+    <linearGradient id="accentGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d96b38"/>
+      <stop offset="100%" stop-color="#a3481f"/>
+    </linearGradient>
+    <linearGradient id="altGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2e6f95"/>
+      <stop offset="100%" stop-color="#7ec8b2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#b8ab95" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="#faf7f2" />
+  <g filter="url(#shadow)">
+    <rect x="70" y="42" width="1260" height="816" rx="28" fill="#fffdf9"/>
+  </g>
+  <text x="250" y="110" fill="#18212f" font-size="42" font-weight="700" font-family="Georgia, serif">Lichess March 2026 game speed mix</text>
+  <text x="250" y="148" fill="#667085" font-size="24" font-family="Georgia, serif">Speed classes inferred from the PGN Event tags in the March 2026 rated standard dump.</text>
+  <g filter="url(#shadow)">    <rect x="110" y="88" width="300" height="88" rx="18" fill="#fffdf9"/>  </g>  <text x="132" y="122" fill="#667085" font-size="22" font-family="Georgia, serif">Largest bucket</text>  <text x="132" y="154" fill="#18212f" font-size="30" font-weight="700" font-family="Georgia, serif">Blitz</text>
+  <g filter="url(#shadow)">    <rect x="470" y="88" width="300" height="88" rx="18" fill="#fffdf9"/>  </g>  <text x="492" y="122" fill="#667085" font-size="22" font-family="Georgia, serif">Smallest bucket</text>  <text x="492" y="154" fill="#18212f" font-size="30" font-weight="700" font-family="Georgia, serif">Correspondence</text>
+  <g filter="url(#shadow)">    <rect x="830" y="88" width="300" height="88" rx="18" fill="#fffdf9"/>  </g>  <text x="852" y="122" fill="#667085" font-size="22" font-family="Georgia, serif">Total games</text>  <text x="852" y="154" fill="#18212f" font-size="30" font-weight="700" font-family="Georgia, serif">90,074,196</text>
+  <text x="224" y="238" text-anchor="end" fill="#18212f" font-size="28" font-weight="700" font-family="Georgia, serif">UltraBullet</text>  <rect x="250" y="210" width="1000" height="40" rx="14" fill="#f0ebe3"/>  <rect x="250" y="210" width="21.93" height="40" rx="14" fill="url(#altGradient)"/>  <text x="1268" y="238" fill="#18212f" font-size="24" font-family="Georgia, serif">1.0%  ·  913,807 games</text>  <text x="250" y="278" fill="#667085" font-size="21" font-family="Georgia, serif">Average player Elo: 1683.7</text>
+  <text x="224" y="320" text-anchor="end" fill="#18212f" font-size="28" font-weight="700" font-family="Georgia, serif">Bullet</text>  <rect x="250" y="292" width="1000" height="40" rx="14" fill="#f0ebe3"/>  <rect x="250" y="292" width="771.04" height="40" rx="14" fill="url(#altGradient)"/>  <text x="1268" y="320" fill="#18212f" font-size="24" font-family="Georgia, serif">35.7%  ·  32,122,739 games</text>  <text x="250" y="360" fill="#667085" font-size="21" font-family="Georgia, serif">Average player Elo: 1771.6</text>
+  <text x="224" y="402" text-anchor="end" fill="#18212f" font-size="28" font-weight="700" font-family="Georgia, serif">Blitz</text>  <rect x="250" y="374" width="1000" height="40" rx="14" fill="#f0ebe3"/>  <rect x="250" y="374" width="1000.00" height="40" rx="14" fill="url(#altGradient)"/>  <text x="1268" y="402" fill="#18212f" font-size="24" font-family="Georgia, serif">46.3%  ·  41,661,445 games</text>  <text x="250" y="442" fill="#667085" font-size="21" font-family="Georgia, serif">Average player Elo: 1605.4</text>
+  <text x="224" y="484" text-anchor="end" fill="#18212f" font-size="28" font-weight="700" font-family="Georgia, serif">Rapid</text>  <rect x="250" y="456" width="1000" height="40" rx="14" fill="#f0ebe3"/>  <rect x="250" y="456" width="353.21" height="40" rx="14" fill="url(#altGradient)"/>  <text x="1268" y="484" fill="#18212f" font-size="24" font-family="Georgia, serif">16.3%  ·  14,715,059 games</text>  <text x="250" y="524" fill="#667085" font-size="21" font-family="Georgia, serif">Average player Elo: 1455.0</text>
+  <text x="224" y="566" text-anchor="end" fill="#18212f" font-size="28" font-weight="700" font-family="Georgia, serif">Classical</text>  <rect x="250" y="538" width="1000" height="40" rx="14" fill="#f0ebe3"/>  <rect x="250" y="538" width="13.67" height="40" rx="14" fill="url(#altGradient)"/>  <text x="1268" y="566" fill="#18212f" font-size="24" font-family="Georgia, serif">0.6%  ·  569,382 games</text>  <text x="250" y="606" fill="#667085" font-size="21" font-family="Georgia, serif">Average player Elo: 1550.4</text>
+  <text x="224" y="648" text-anchor="end" fill="#18212f" font-size="28" font-weight="700" font-family="Georgia, serif">Correspondence</text>  <rect x="250" y="620" width="1000" height="40" rx="14" fill="#f0ebe3"/>  <rect x="250" y="620" width="2.20" height="40" rx="14" fill="url(#altGradient)"/>  <text x="1268" y="648" fill="#18212f" font-size="24" font-family="Georgia, serif">0.1%  ·  91,764 games</text>  <text x="250" y="688" fill="#667085" font-size="21" font-family="Georgia, serif">Average player Elo: 1777.0</text>
+</svg>
