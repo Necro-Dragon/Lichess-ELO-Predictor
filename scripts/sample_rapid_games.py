@@ -27,8 +27,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--chunk-games",
         type=int,
-        default=250_000,
+        default=150_000,
         help="How many sampled games to place in each compressed chunk.",
+    )
+    parser.add_argument(
+        "--exclude-raw-termination",
+        action="append",
+        default=[],
+        help=(
+            "Exclude games whose raw Lichess Termination tag matches this value "
+            "(case-insensitive). May be passed multiple times."
+        ),
     )
     parser.add_argument(
         "--count-progress-every",
@@ -106,6 +115,10 @@ def normalize_termination(raw_termination: str, result: str, moves_text: str) ->
     if result in {"1-0", "0-1"}:
         return "resignation"
     return "draw"
+
+
+def is_excluded_raw_termination(headers: dict[str, str], excluded_raw_terminations: set[str]) -> bool:
+    return headers.get("Termination", "").strip().lower() in excluded_raw_terminations
 
 
 def iter_pgn_games(input_path: Path):
@@ -226,9 +239,14 @@ def main() -> int:
     input_path = Path(args.input)
     outdir = Path(args.outdir)
     base_name = f"rapid_2026-03_sample_{args.sample_size}"
+    excluded_raw_terminations = {
+        value.strip().lower()
+        for value in (args.exclude_raw_termination or [])
+        if value.strip()
+    }
     outdir.mkdir(parents=True, exist_ok=True)
 
-    print("Count pass: scanning March 2026 archive for rapid non-abandoned games...", file=sys.stderr)
+    print("Count pass: scanning March 2026 archive for eligible rapid games...", file=sys.stderr)
     total_games = 0
     eligible_games = 0
     raw_termination_counts: Counter[str] = Counter()
@@ -239,6 +257,8 @@ def main() -> int:
         total_games += 1
         speed = classify_speed(headers.get("Event", ""), headers.get("TimeControl", ""))
         if speed == "Rapid":
+            if is_excluded_raw_termination(headers, excluded_raw_terminations):
+                continue
             game_text, normalized = transformed_game_text(headers, move_lines)
             if game_text is not None:
                 eligible_games += 1
@@ -248,7 +268,7 @@ def main() -> int:
         if args.count_progress_every and total_games % args.count_progress_every == 0:
             elapsed = max(time.monotonic() - count_started, 1e-9)
             print(
-                f"Counted {total_games:,} total games; {eligible_games:,} rapid non-abandoned "
+                f"Counted {total_games:,} total games; {eligible_games:,} eligible rapid "
                 f"({total_games / elapsed:,.0f} total games/sec)",
                 file=sys.stderr,
             )
@@ -256,11 +276,11 @@ def main() -> int:
     if args.sample_size > eligible_games:
         raise SystemExit(
             f"Requested sample of {args.sample_size:,} games, but only found "
-            f"{eligible_games:,} rapid non-abandoned games."
+            f"{eligible_games:,} eligible rapid games."
         )
 
     print(
-        f"Count pass complete: {eligible_games:,} rapid non-abandoned games eligible for sampling.",
+        f"Count pass complete: {eligible_games:,} eligible rapid games for sampling.",
         file=sys.stderr,
     )
 
@@ -285,6 +305,8 @@ def main() -> int:
     for headers, move_lines in iter_pgn_games(input_path):
         speed = classify_speed(headers.get("Event", ""), headers.get("TimeControl", ""))
         if speed != "Rapid":
+            continue
+        if is_excluded_raw_termination(headers, excluded_raw_terminations):
             continue
 
         game_text, _normalized = transformed_game_text(headers, move_lines)
@@ -334,6 +356,7 @@ def main() -> int:
         "eligible_games": eligible_games,
         "rng_seed": args.seed,
         "chunk_games": args.chunk_games,
+        "excluded_raw_terminations": sorted(excluded_raw_terminations),
         "chunk_files": chunk_paths,
         "fields_kept": [
             "Site",
@@ -348,10 +371,11 @@ def main() -> int:
         "population_raw_termination_counts": dict(sorted(raw_termination_counts.items())),
         "population_normalized_termination_counts": dict(sorted(normalized_termination_counts.items())),
         "notes": [
-            "Abandoned games were excluded.",
+            "Games whose raw Lichess Termination tag matched excluded_raw_terminations were excluded before sampling.",
             "Termination is a best-effort normalization from Lichess PGN metadata and movetext.",
             "Rapid draws in the monthly dump are not reliably separable into agreement, repetition, and 50-move rule from metadata alone.",
             "Additional observed endings include time forfeit, insufficient material, rules infraction, and stalemate.",
+            "This is a uniform random sample of the filtered rapid-game population, not of the full rapid population.",
         ],
     }
     write_manifest(outdir, manifest)

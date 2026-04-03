@@ -4,16 +4,24 @@
   "speed": "Rapid",
   "sample_type": "uniform_without_replacement",
   "sample_size": 1500000,
-  "eligible_games": 14569156,
+  "eligible_games": 14567559,
   "rng_seed": 202603,
-  "chunk_games": 250000,
+  "chunk_games": 150000,
+  "excluded_raw_terminations": [
+    "abandoned",
+    "rules infraction"
+  ],
   "chunk_files": [
     "rapid_2026-03_sample_1500000_part_01.pgn.zst",
     "rapid_2026-03_sample_1500000_part_02.pgn.zst",
     "rapid_2026-03_sample_1500000_part_03.pgn.zst",
     "rapid_2026-03_sample_1500000_part_04.pgn.zst",
     "rapid_2026-03_sample_1500000_part_05.pgn.zst",
-    "rapid_2026-03_sample_1500000_part_06.pgn.zst"
+    "rapid_2026-03_sample_1500000_part_06.pgn.zst",
+    "rapid_2026-03_sample_1500000_part_07.pgn.zst",
+    "rapid_2026-03_sample_1500000_part_08.pgn.zst",
+    "rapid_2026-03_sample_1500000_part_09.pgn.zst",
+    "rapid_2026-03_sample_1500000_part_10.pgn.zst"
   ],
   "fields_kept": [
     "Site",
@@ -25,16 +33,9 @@
     "Opening",
     "MovesWithClocks"
   ],
-  "notes": [
-    "Abandoned games were excluded.",
-    "Termination is a best-effort normalization from Lichess PGN metadata and movetext.",
-    "Rapid draws in the monthly dump are not reliably separable into agreement, repetition, and 50-move rule from metadata alone.",
-    "Additional observed endings include time forfeit, insufficient material, rules infraction, and stalemate."
-  ],
   "population_raw_termination_counts": {
     "Insufficient material": 4038,
     "Normal": 12984466,
-    "Rules infraction": 1597,
     "Time forfeit": 1578940,
     "Unterminated": 115
   },
@@ -43,7 +44,13 @@
     "draw": 620819,
     "insufficient material": 4038,
     "resignation": 7400012,
-    "rules infraction": 1597,
     "time forfeit": 1578940
-  }
+  },
+  "notes": [
+    "Games whose raw Lichess Termination tag matched excluded_raw_terminations were excluded before sampling.",
+    "Termination is a best-effort normalization from Lichess PGN metadata and movetext.",
+    "Rapid draws in the monthly dump are not reliably separable into agreement, repetition, and 50-move rule from metadata alone.",
+    "Additional observed endings include time forfeit, insufficient material, rules infraction, and stalemate.",
+    "This is a uniform random sample of the filtered rapid-game population, not of the full rapid population."
+  ]
 }

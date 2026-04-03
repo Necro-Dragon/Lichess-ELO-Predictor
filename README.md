@@ -11,7 +11,7 @@ This repo analyzes the official Lichess March 2026 rated standard dump:
 - `artifacts/march_2026_standard_summary.json`: aggregated counts and rating statistics
 - `graphics/march_2026_player_elo_distribution.svg`: player-rating histogram
 - `graphics/march_2026_game_speed_distribution.svg`: speed-class distribution
-- `data/rapid_2026-03_sample_1500000/`: a uniform sample of 1.5M reduced-field rapid games, stored as split `.pgn.zst` chunks
+- `data/rapid_2026-03_sample_1500000/`: a uniform sample of 1.5M reduced-field rapid games, excluding raw `Abandoned` and `Rules infraction`, stored as split `.pgn.zst` chunks
 
 ## Method
 
