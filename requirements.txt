@@ -1,0 +1,5 @@
+chess
+numpy
+tqdm
+torch
+umap-learn

@@ -12,6 +12,9 @@ This repo analyzes the official Lichess March 2026 rated standard dump:
 - `graphics/march_2026_player_elo_distribution.svg`: player-rating histogram
 - `graphics/march_2026_game_speed_distribution.svg`: speed-class distribution
 - `data/rapid_2026-03_sample_1500000/`: a uniform sample of 1.5M reduced-field rapid games, excluding raw `Abandoned` and `Rules infraction`, stored as split `.pgn.zst` chunks
+- `data/rapid_2026-03_sparse_snapshot_200000/`: a reproducible 200k-game sparse-snapshot corpus for neural training
+- `artifacts/rating_band_training/`: per-epoch checkpoints plus training history and metric summaries
+- `report/rapid_sparse_rating_band_training_report.md`: markdown training report with train/test learning curves
 
 ## Method
 
@@ -35,6 +38,30 @@ If you already have the March 2026 archive on disk, pass the local `.zst` path i
 
 ```bash
 ./scripts/run_march_2026_standard_analysis.sh /tmp/lichess_db_standard_rated_2026-03.pgn.zst
+```
+
+## Neural Rating-Band Baseline
+
+Build the sparse-snapshot corpus:
+
+```bash
+python3 scripts/build_sparse_snapshot_corpus.py
+```
+
+Train the neural baseline and generate the report:
+
+```bash
+python3 scripts/train_rating_band_model.py
+```
+
+Export high-dimensional game embeddings from the best checkpoint:
+
+```bash
+python3 scripts/export_game_embeddings.py \
+  --checkpoint artifacts/rating_band_training/best.pt \
+  --corpus data/rapid_2026-03_sparse_snapshot_200000 \
+  --split test \
+  --out artifacts/test_game_embeddings.npz
 ```
 
 ## Findings

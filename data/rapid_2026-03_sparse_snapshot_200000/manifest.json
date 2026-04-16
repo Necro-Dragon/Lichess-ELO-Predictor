@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-04-16T06:49:47.971861+00:00",
+  "source_sample_dir": "/Users/rowan_williams/Documents/Programming/Lichess-ELO-Predictor/data/rapid_2026-03_sample_1500000",
+  "source_manifest_path": "/Users/rowan_williams/Documents/Programming/Lichess-ELO-Predictor/data/rapid_2026-03_sample_1500000/manifest.json",
+  "source_sample_size": 1500000,
+  "subset_seed": 20260416,
+  "selected_game_count": 200000,
+  "selected_source_indices_are_uniform_sample": true,
+  "snapshot_step": 7,
+  "band_width": 200,
+  "total_snapshot_count": 2127383,
+  "max_snapshots_per_game": 80,
+  "split_counts": {
+    "train": 159999,
+    "val": 19998,
+    "test": 20003
+  },
+  "split_ids": {
+    "train": 0,
+    "val": 1,
+    "test": 2
+  },
+  "rating_bands": {
+    "band_width": 200,
+    "lower_bound": 400,
+    "upper_bound": 3200,
+    "class_count": 16,
+    "labels": [
+      "<400",
+      "400-599",
+      "600-799",
+      "800-999",
+      "1000-1199",
+      "1200-1399",
+      "1400-1599",
+      "1600-1799",
+      "1800-1999",
+      "2000-2199",
+      "2200-2399",
+      "2400-2599",
+      "2600-2799",
+      "2800-2999",
+      "3000-3199",
+      ">=3200"
+    ],
+    "centers": [
+      300.0,
+      500.0,
+      700.0,
+      900.0,
+      1100.0,
+      1300.0,
+      1500.0,
+      1700.0,
+      1900.0,
+      2100.0,
+      2300.0,
+      2500.0,
+      2700.0,
+      2900.0,
+      3100.0,
+      3300.0
+    ]
+  },
+  "npz_file": "sparse_snapshot_corpus.npz",
+  "arrays": {
+    "board_codes": {
+      "dtype": "uint8",
+      "shape": [
+        2127383,
+        64
+      ]
+    },
+    "side_to_move": {
+      "dtype": "uint8",
+      "shape": [
+        2127383
+      ]
+    },
+    "castling_rights": {
+      "dtype": "uint8",
+      "shape": [
+        2127383,
+        4
+      ]
+    },
+    "en_passant_file": {
+      "dtype": "uint8",
+      "shape": [
+        2127383
+      ]
+    },
+    "snapshot_plies": {
+      "dtype": "uint16",
+      "shape": [
+        2127383
+      ]
+    },
+    "offsets": {
+      "dtype": "int64",
+      "shape": [
+        200000
+      ]
+    },
+    "lengths": {
+      "dtype": "int32",
+      "shape": [
+        200000
+      ]
+    },
+    "final_plies": {
+      "dtype": "uint16",
+      "shape": [
+        200000
+      ]
+    },
+    "source_game_index": {
+      "dtype": "int32",
+      "shape": [
+        200000
+      ]
+    },
+    "white_elo": {
+      "dtype": "int16",
+      "shape": [
+        200000
+      ]
+    },
+    "black_elo": {
+      "dtype": "int16",
+      "shape": [
+        200000
+      ]
+    },
+    "average_elo": {
+      "dtype": "int16",
+      "shape": [
+        200000
+      ]
+    },
+    "white_band": {
+      "dtype": "int16",
+      "shape": [
+        200000
+      ]
+    },
+    "black_band": {
+      "dtype": "int16",
+      "shape": [
+        200000
+      ]
+    },
+    "split_id": {
+      "dtype": "uint8",
+      "shape": [
+        200000
+      ]
+    },
+    "site": {
+      "dtype": "<U28",
+      "shape": [
+        200000
+      ]
+    },
+    "opening": {
+      "dtype": "<U99",
+      "shape": [
+        200000
+      ]
+    },
+    "eco": {
+      "dtype": "<U3",
+      "shape": [
+        200000
+      ]
+    }
+  },
+  "notes": [
+    "Positions are stored at ply 0, snapshot_step, 2*snapshot_step, ... and the final position is appended once if not already present.",
+    "split_ids use 0=train, 1=val, 2=test.",
+    "Rating bands are derived from the training split only and reused unchanged for validation and test rows.",
+    "board_codes are directly comparable with chess_distance.ChessPosition.as_array()."
+  ]
+}

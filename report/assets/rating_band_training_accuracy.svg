@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Sparse-game band accuracy over epochs</title>
+  <desc id="desc">Sparse-game band accuracy over epochs</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#b8ab95" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="980" fill="#faf7f2" />
+  <g filter="url(#shadow)">
+    <rect x="70" y="42" width="1460" height="896" rx="28" fill="#fffdf9"/>
+  </g>
+  <text x="120" y="94" fill="#18212f" font-size="42" font-weight="700" font-family="Georgia, serif">Sparse-game band accuracy over epochs</text>
+  <line x1="1220" y1="88" x2="1284" y2="88" stroke="#d96b38" stroke-width="5"/>  <text x="1300" y="96" fill="#18212f" font-size="22" font-family="Georgia, serif">Train</text>
+  <line x1="1220" y1="122" x2="1284" y2="122" stroke="#7f8ea3" stroke-width="5" stroke-dasharray="10 8"/>  <text x="1300" y="130" fill="#18212f" font-size="22" font-family="Georgia, serif">Validation</text>
+  <line x1="1220" y1="156" x2="1284" y2="156" stroke="#2e6f95" stroke-width="5"/>  <text x="1300" y="164" fill="#18212f" font-size="22" font-family="Georgia, serif">Test</text>
+  <line x1="120" y1="850.00" x2="1440" y2="850.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="706.00" x2="1440" y2="706.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="562.00" x2="1440" y2="562.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="418.00" x2="1440" y2="418.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="274.00" x2="1440" y2="274.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="130.00" x2="1440" y2="130.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="850" x2="1440" y2="850" stroke="#18212f" stroke-width="2"/>
+  <line x1="120" y1="130" x2="120" y2="850" stroke="#18212f" stroke-width="2"/>
+  <path d="M 120.00 850.00 L 230.00 662.91 L 340.00 560.11 L 450.00 504.86 L 560.00 409.21 L 670.00 372.31 L 780.00 346.10 L 890.00 313.85 L 1000.00 280.34 L 1110.00 271.83 L 1220.00 241.34 L 1330.00 221.22 L 1440.00 194.41" fill="none" stroke="#d96b38" stroke-width="5"/>
+  <path d="M 120.00 577.28 L 230.00 655.03 L 340.00 271.98 L 450.00 354.14 L 560.00 470.96 L 670.00 210.83 L 780.00 289.21 L 890.00 382.29 L 1000.00 359.39 L 1110.00 381.24 L 1220.00 252.02 L 1330.00 221.76 L 1440.00 482.52" fill="none" stroke="#7f8ea3" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M 120.00 580.38 L 230.00 629.33 L 340.00 239.44 L 450.00 279.57 L 560.00 455.18 L 670.00 130.00 L 780.00 227.47 L 890.00 346.16 L 1000.00 338.81 L 1110.00 378.51 L 1220.00 202.05 L 1330.00 169.70 L 1440.00 448.25" fill="none" stroke="#2e6f95" stroke-width="5"/>
+  <line x1="120.00" y1="850" x2="120.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="120.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">1</text>
+  <line x1="230.00" y1="850" x2="230.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="230.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">2</text>
+  <line x1="340.00" y1="850" x2="340.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="340.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">3</text>
+  <line x1="450.00" y1="850" x2="450.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="450.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">4</text>
+  <line x1="560.00" y1="850" x2="560.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="560.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">5</text>
+  <line x1="670.00" y1="850" x2="670.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="670.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">6</text>
+  <line x1="780.00" y1="850" x2="780.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="780.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">7</text>
+  <line x1="890.00" y1="850" x2="890.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="890.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">8</text>
+  <line x1="1000.00" y1="850" x2="1000.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1000.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">9</text>
+  <line x1="1110.00" y1="850" x2="1110.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1110.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">10</text>
+  <line x1="1220.00" y1="850" x2="1220.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1220.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">11</text>
+  <line x1="1330.00" y1="850" x2="1330.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1330.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">12</text>
+  <line x1="1440.00" y1="850" x2="1440.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1440.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">13</text>
+  <text x="100" y="858.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">0.144</text>
+  <text x="100" y="714.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">0.161</text>
+  <text x="100" y="570.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">0.178</text>
+  <text x="100" y="426.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">0.195</text>
+  <text x="100" y="282.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">0.212</text>
+  <text x="100" y="138.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">0.230</text>
+  <text x="780.00" y="932" text-anchor="middle" fill="#667085" font-size="24" font-family="Georgia, serif">Epoch</text>
+  <text x="48" y="490.00" transform="rotate(-90 48 490.00)" text-anchor="middle" fill="#667085" font-size="24" font-family="Georgia, serif">Band accuracy</text>
+</svg>

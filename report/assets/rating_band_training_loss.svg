@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Sparse-game training loss over epochs</title>
+  <desc id="desc">Sparse-game training loss over epochs</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#b8ab95" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="980" fill="#faf7f2" />
+  <g filter="url(#shadow)">
+    <rect x="70" y="42" width="1460" height="896" rx="28" fill="#fffdf9"/>
+  </g>
+  <text x="120" y="94" fill="#18212f" font-size="42" font-weight="700" font-family="Georgia, serif">Sparse-game training loss over epochs</text>
+  <line x1="1220" y1="88" x2="1284" y2="88" stroke="#d96b38" stroke-width="5"/>  <text x="1300" y="96" fill="#18212f" font-size="22" font-family="Georgia, serif">Train</text>
+  <line x1="1220" y1="122" x2="1284" y2="122" stroke="#7f8ea3" stroke-width="5" stroke-dasharray="10 8"/>  <text x="1300" y="130" fill="#18212f" font-size="22" font-family="Georgia, serif">Validation</text>
+  <line x1="1220" y1="156" x2="1284" y2="156" stroke="#2e6f95" stroke-width="5"/>  <text x="1300" y="164" fill="#18212f" font-size="22" font-family="Georgia, serif">Test</text>
+  <line x1="120" y1="850.00" x2="1440" y2="850.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="706.00" x2="1440" y2="706.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="562.00" x2="1440" y2="562.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="418.00" x2="1440" y2="418.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="274.00" x2="1440" y2="274.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="130.00" x2="1440" y2="130.00" stroke="#d8d2c8" stroke-width="1"/>
+  <line x1="120" y1="850" x2="1440" y2="850" stroke="#18212f" stroke-width="2"/>
+  <line x1="120" y1="130" x2="120" y2="850" stroke="#18212f" stroke-width="2"/>
+  <path d="M 120.00 130.00 L 230.00 331.30 L 340.00 430.47 L 450.00 513.16 L 560.00 573.47 L 670.00 628.57 L 780.00 666.88 L 890.00 701.12 L 1000.00 733.61 L 1110.00 759.98 L 1220.00 793.43 L 1330.00 822.94 L 1440.00 850.00" fill="none" stroke="#d96b38" stroke-width="5"/>
+  <path d="M 120.00 310.43 L 230.00 350.58 L 340.00 452.21 L 450.00 532.63 L 560.00 575.40 L 670.00 591.82 L 780.00 626.27 L 890.00 634.85 L 1000.00 658.71 L 1110.00 639.27 L 1220.00 655.83 L 1330.00 652.90 L 1440.00 625.93" fill="none" stroke="#7f8ea3" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M 120.00 334.63 L 230.00 384.01 L 340.00 476.14 L 450.00 568.20 L 560.00 624.92 L 670.00 636.38 L 780.00 660.54 L 890.00 668.13 L 1000.00 696.44 L 1110.00 686.07 L 1220.00 682.85 L 1330.00 680.57 L 1440.00 660.01" fill="none" stroke="#2e6f95" stroke-width="5"/>
+  <line x1="120.00" y1="850" x2="120.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="120.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">1</text>
+  <line x1="230.00" y1="850" x2="230.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="230.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">2</text>
+  <line x1="340.00" y1="850" x2="340.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="340.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">3</text>
+  <line x1="450.00" y1="850" x2="450.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="450.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">4</text>
+  <line x1="560.00" y1="850" x2="560.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="560.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">5</text>
+  <line x1="670.00" y1="850" x2="670.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="670.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">6</text>
+  <line x1="780.00" y1="850" x2="780.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="780.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">7</text>
+  <line x1="890.00" y1="850" x2="890.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="890.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">8</text>
+  <line x1="1000.00" y1="850" x2="1000.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1000.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">9</text>
+  <line x1="1110.00" y1="850" x2="1110.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1110.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">10</text>
+  <line x1="1220.00" y1="850" x2="1220.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1220.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">11</text>
+  <line x1="1330.00" y1="850" x2="1330.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1330.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">12</text>
+  <line x1="1440.00" y1="850" x2="1440.00" y2="862" stroke="#18212f" stroke-width="1"/>  <text x="1440.00" y="890" text-anchor="middle" fill="#667085" font-size="22" font-family="Georgia, serif">13</text>
+  <text x="100" y="858.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">3.768</text>
+  <text x="100" y="714.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">3.927</text>
+  <text x="100" y="570.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">4.087</text>
+  <text x="100" y="426.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">4.247</text>
+  <text x="100" y="282.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">4.407</text>
+  <text x="100" y="138.00" text-anchor="end" fill="#667085" font-size="22" font-family="Georgia, serif">4.567</text>
+  <text x="780.00" y="932" text-anchor="middle" fill="#667085" font-size="24" font-family="Georgia, serif">Epoch</text>
+  <text x="48" y="490.00" transform="rotate(-90 48 490.00)" text-anchor="middle" fill="#667085" font-size="24" font-family="Georgia, serif">Total loss</text>
+</svg>

@@ -1,0 +1,435 @@
+{
+  "generated_at": "2026-04-16T07:38:45.158460+00:00",
+  "device": "mps",
+  "epochs": [
+    {
+      "epoch": 1,
+      "train": {
+        "total_loss": 4.567392289131504,
+        "classification_loss": 4.3809489230835315,
+        "regression_loss": 0.7457734511260974,
+        "band_accuracy": 0.14386652416577603,
+        "white_accuracy": 0.1430633941462134,
+        "black_accuracy": 0.14466965418533867,
+        "elo_mae": 276.7315477972714,
+        "elo_rmse": 342.8928477719484
+      },
+      "val": {
+        "total_loss": 4.366943497099344,
+        "classification_loss": 4.198589141732014,
+        "regression_loss": 0.673417441462717,
+        "band_accuracy": 0.17631763176317633,
+        "white_accuracy": 0.16541654165416542,
+        "black_accuracy": 0.18721872187218722,
+        "elo_mae": 259.46343022974173,
+        "elo_rmse": 324.75420371302806
+      },
+      "test": {
+        "total_loss": 4.340062988928984,
+        "classification_loss": 4.172333318078803,
+        "regression_loss": 0.6709186468208778,
+        "band_accuracy": 0.17594860770884369,
+        "white_accuracy": 0.1662750587411888,
+        "black_accuracy": 0.18562215667649853,
+        "elo_mae": 258.73142363606394,
+        "elo_rmse": 323.96962878785945
+      }
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "total_loss": 4.343763978976953,
+        "classification_loss": 4.176369581055104,
+        "regression_loss": 0.6695775882113078,
+        "band_accuracy": 0.16612916330727068,
+        "white_accuracy": 0.16320102000637504,
+        "black_accuracy": 0.1690573066081663,
+        "elo_mae": 258.6892512316483,
+        "elo_rmse": 322.83727414040936
+      },
+      "val": {
+        "total_loss": 4.32234191966064,
+        "classification_loss": 4.158698665200382,
+        "regression_loss": 0.6545730575893817,
+        "band_accuracy": 0.16706670667066706,
+        "white_accuracy": 0.16651665166516652,
+        "black_accuracy": 0.16761676167616762,
+        "elo_mae": 254.71228455853398,
+        "elo_rmse": 319.8339249695944
+      },
+      "test": {
+        "total_loss": 4.285207491174183,
+        "classification_loss": 4.12159700073767,
+        "regression_loss": 0.6544419878906877,
+        "band_accuracy": 0.17012448132780084,
+        "white_accuracy": 0.1686247062940559,
+        "black_accuracy": 0.17162425636154577,
+        "elo_mae": 254.55155837952432,
+        "elo_rmse": 319.42504716816785
+      }
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "total_loss": 4.2335860545619175,
+        "classification_loss": 4.075272349213236,
+        "regression_loss": 0.6332548338868212,
+        "band_accuracy": 0.17836048975306096,
+        "white_accuracy": 0.1780636128975806,
+        "black_accuracy": 0.1786573666085413,
+        "elo_mae": 250.10847108810054,
+        "elo_rmse": 312.8355996776944
+      },
+      "val": {
+        "total_loss": 4.2094326129924395,
+        "classification_loss": 4.055468835977569,
+        "regression_loss": 0.6158551793358829,
+        "band_accuracy": 0.21264626462646263,
+        "white_accuracy": 0.21742174217421742,
+        "black_accuracy": 0.20787078707870787,
+        "elo_mae": 246.38855814292367,
+        "elo_rmse": 307.2291382044291
+      },
+      "test": {
+        "total_loss": 4.182855754710791,
+        "classification_loss": 4.028778020116154,
+        "regression_loss": 0.6163109250827437,
+        "band_accuracy": 0.21651752237164426,
+        "white_accuracy": 0.2204169374593811,
+        "black_accuracy": 0.21261810728390743,
+        "elo_mae": 246.28860656253124,
+        "elo_rmse": 307.2301885666267
+      }
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "total_loss": 4.141724319650055,
+        "classification_loss": 3.9912462152122936,
+        "regression_loss": 0.601912428506399,
+        "band_accuracy": 0.1849355308470678,
+        "white_accuracy": 0.18530740817130106,
+        "black_accuracy": 0.18456365352283452,
+        "elo_mae": 242.7488094530083,
+        "elo_rmse": 303.9034920757379
+      },
+      "val": {
+        "total_loss": 4.120094393191188,
+        "classification_loss": 3.9720708319325126,
+        "regression_loss": 0.5920941539437357,
+        "band_accuracy": 0.20287028702870288,
+        "white_accuracy": 0.19911991199119913,
+        "black_accuracy": 0.20662066206620663,
+        "elo_mae": 240.537750650065,
+        "elo_rmse": 300.84860002668086
+      },
+      "test": {
+        "total_loss": 4.080573744126179,
+        "classification_loss": 3.933615004474602,
+        "regression_loss": 0.5878349732579109,
+        "band_accuracy": 0.21174323851422286,
+        "white_accuracy": 0.20691896215567665,
+        "black_accuracy": 0.2165675148727691,
+        "elo_mae": 239.31135041657814,
+        "elo_rmse": 299.56563190906405
+      }
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "total_loss": 4.074722871941985,
+        "classification_loss": 3.9298261119654487,
+        "regression_loss": 0.5795870338972131,
+        "band_accuracy": 0.19631685198032486,
+        "white_accuracy": 0.19590747442171513,
+        "black_accuracy": 0.19672622953893462,
+        "elo_mae": 237.17906952738767,
+        "elo_rmse": 297.59065848388974
+      },
+      "val": {
+        "total_loss": 4.072579263007477,
+        "classification_loss": 3.9309583171175317,
+        "regression_loss": 0.5664838272126297,
+        "band_accuracy": 0.18896889688968896,
+        "white_accuracy": 0.18826882688268826,
+        "black_accuracy": 0.18966896689668966,
+        "elo_mae": 233.63101561621005,
+        "elo_rmse": 294.69229817737096
+      },
+      "test": {
+        "total_loss": 4.017570169795747,
+        "classification_loss": 3.8773591329960477,
+        "regression_loss": 0.5608441262747451,
+        "band_accuracy": 0.1908463730440434,
+        "white_accuracy": 0.19017147427885817,
+        "black_accuracy": 0.19152127180922862,
+        "elo_mae": 231.9328952219667,
+        "elo_rmse": 292.9645663974149
+      }
+    },
+    {
+      "epoch": 6,
+      "train": {
+        "total_loss": 4.013510670584231,
+        "classification_loss": 3.8733166149100233,
+        "regression_loss": 0.5607762148721831,
+        "band_accuracy": 0.20070750442190263,
+        "white_accuracy": 0.20140125875786724,
+        "black_accuracy": 0.20001375008593802,
+        "elo_mae": 232.5553591472642,
+        "elo_rmse": 292.0687971574749
+      },
+      "val": {
+        "total_loss": 4.05434028617572,
+        "classification_loss": 3.9155986386068418,
+        "regression_loss": 0.5549665329599156,
+        "band_accuracy": 0.21992199219921993,
+        "white_accuracy": 0.21327132713271327,
+        "black_accuracy": 0.22657265726572656,
+        "elo_mae": 231.35270529006024,
+        "elo_rmse": 290.6819780296589
+      },
+      "test": {
+        "total_loss": 4.0048358420255825,
+        "classification_loss": 3.867182144491528,
+        "regression_loss": 0.5506147734598477,
+        "band_accuracy": 0.2295405689146628,
+        "white_accuracy": 0.22096685497175425,
+        "black_accuracy": 0.23811428285757136,
+        "elo_mae": 230.22835358875855,
+        "elo_rmse": 289.14346885787086
+      }
+    },
+    {
+      "epoch": 7,
+      "train": {
+        "total_loss": 3.9709512789291637,
+        "classification_loss": 3.8329503075403073,
+        "regression_loss": 0.5520038955958892,
+        "band_accuracy": 0.20382627391421196,
+        "white_accuracy": 0.20348877180482378,
+        "black_accuracy": 0.20416377602360014,
+        "elo_mae": 230.5003679344285,
+        "elo_rmse": 289.4348828056082
+      },
+      "val": {
+        "total_loss": 4.016072324829491,
+        "classification_loss": 3.876909381521381,
+        "regression_loss": 0.5566517905791243,
+        "band_accuracy": 0.2105960596059606,
+        "white_accuracy": 0.21237123712371236,
+        "black_accuracy": 0.20882088208820881,
+        "elo_mae": 231.87178703221883,
+        "elo_rmse": 290.5404091911094
+      },
+      "test": {
+        "total_loss": 3.9779923306532705,
+        "classification_loss": 3.839177872451289,
+        "regression_loss": 0.5552577796336597,
+        "band_accuracy": 0.21794230865370195,
+        "white_accuracy": 0.21956706494025896,
+        "black_accuracy": 0.21631755236714492,
+        "elo_mae": 231.30125798513035,
+        "elo_rmse": 290.03690554223186
+      }
+    },
+    {
+      "epoch": 8,
+      "train": {
+        "total_loss": 3.9329142857911,
+        "classification_loss": 3.7970563276120175,
+        "regression_loss": 0.5434318359364915,
+        "band_accuracy": 0.20766379789873687,
+        "white_accuracy": 0.20723879524247027,
+        "black_accuracy": 0.20808880055500348,
+        "elo_mae": 228.45058057491767,
+        "elo_rmse": 286.8941765297412
+      },
+      "val": {
+        "total_loss": 4.006532783138238,
+        "classification_loss": 3.8705294770543035,
+        "regression_loss": 0.5440131893204694,
+        "band_accuracy": 0.1995199519951995,
+        "white_accuracy": 0.19896989698969897,
+        "black_accuracy": 0.20007000700070007,
+        "elo_mae": 228.2700836978229,
+        "elo_rmse": 287.41716082626965
+      },
+      "test": {
+        "total_loss": 3.9695585952701196,
+        "classification_loss": 3.8338666083556094,
+        "regression_loss": 0.5427679012449051,
+        "band_accuracy": 0.20381942708593712,
+        "white_accuracy": 0.20326950957356396,
+        "black_accuracy": 0.20436934459831024,
+        "elo_mae": 227.9334458717911,
+        "elo_rmse": 286.9925625610448
+      }
+    },
+    {
+      "epoch": 9,
+      "train": {
+        "total_loss": 3.8968158665334824,
+        "classification_loss": 3.76290381110386,
+        "regression_loss": 0.5356482255555616,
+        "band_accuracy": 0.21165132282076762,
+        "white_accuracy": 0.21215132594578717,
+        "black_accuracy": 0.2111513196957481,
+        "elo_mae": 226.49143723896321,
+        "elo_rmse": 284.54766929150134
+      },
+      "val": {
+        "total_loss": 3.9800317679444412,
+        "classification_loss": 3.845665084134222,
+        "regression_loss": 0.5374666961363189,
+        "band_accuracy": 0.20224522452245225,
+        "white_accuracy": 0.20517051705170516,
+        "black_accuracy": 0.1993199319931993,
+        "elo_mae": 226.91282145792704,
+        "elo_rmse": 285.4580496628388
+      },
+      "test": {
+        "total_loss": 3.9381123748962947,
+        "classification_loss": 3.8050869461274686,
+        "regression_loss": 0.5321017557285145,
+        "band_accuracy": 0.20469429585562166,
+        "white_accuracy": 0.20851872219167125,
+        "black_accuracy": 0.20086986951957206,
+        "elo_mae": 225.04350565676867,
+        "elo_rmse": 283.98744115275616
+      }
+    },
+    {
+      "epoch": 10,
+      "train": {
+        "total_loss": 3.867524849414745,
+        "classification_loss": 3.7348699643418652,
+        "regression_loss": 0.5306195299422248,
+        "band_accuracy": 0.21266382914893217,
+        "white_accuracy": 0.21255757848486553,
+        "black_accuracy": 0.21277007981299884,
+        "elo_mae": 225.4147878707445,
+        "elo_rmse": 283.0399095488832
+      },
+      "val": {
+        "total_loss": 4.001628483494636,
+        "classification_loss": 3.8659884250096077,
+        "regression_loss": 0.5425602097382056,
+        "band_accuracy": 0.19964496449644964,
+        "white_accuracy": 0.1933193319331933,
+        "black_accuracy": 0.20597059705970597,
+        "elo_mae": 227.74119628759752,
+        "elo_rmse": 287.2052507103649
+      },
+      "test": {
+        "total_loss": 3.9496317431490846,
+        "classification_loss": 3.8154854096991118,
+        "regression_loss": 0.5365853417231394,
+        "band_accuracy": 0.1999700044993251,
+        "white_accuracy": 0.194370844373344,
+        "black_accuracy": 0.2055691646253062,
+        "elo_mae": 225.604850849521,
+        "elo_rmse": 285.634015711295
+      }
+    },
+    {
+      "epoch": 11,
+      "train": {
+        "total_loss": 3.83036494731161,
+        "classification_loss": 3.6992530219372317,
+        "regression_loss": 0.5244477037133298,
+        "band_accuracy": 0.21629197682485515,
+        "white_accuracy": 0.21689510559440997,
+        "black_accuracy": 0.21568884805530034,
+        "elo_mae": 223.9478223911751,
+        "elo_rmse": 281.20135026124285
+      },
+      "val": {
+        "total_loss": 3.9832249969610607,
+        "classification_loss": 3.849099726781379,
+        "regression_loss": 0.5365010678905262,
+        "band_accuracy": 0.215021502150215,
+        "white_accuracy": 0.22112211221122113,
+        "black_accuracy": 0.20892089208920891,
+        "elo_mae": 226.9714726843778,
+        "elo_rmse": 284.6529204856576
+      },
+      "test": {
+        "total_loss": 3.953205841538644,
+        "classification_loss": 3.8196908481501404,
+        "regression_loss": 0.5340599757739557,
+        "band_accuracy": 0.22096685497175425,
+        "white_accuracy": 0.22561615757636355,
+        "black_accuracy": 0.21631755236714492,
+        "elo_mae": 226.16173843454732,
+        "elo_rmse": 284.1376180825034
+      }
+    },
+    {
+      "epoch": 12,
+      "train": {
+        "total_loss": 3.7975740833374383,
+        "classification_loss": 3.6676522892112544,
+        "regression_loss": 0.5196871651076977,
+        "band_accuracy": 0.21868574178588615,
+        "white_accuracy": 0.21902636891480573,
+        "black_accuracy": 0.2183451146569666,
+        "elo_mae": 222.6390169577232,
+        "elo_rmse": 279.7169806930892
+      },
+      "val": {
+        "total_loss": 3.986479745601246,
+        "classification_loss": 3.8541022253603994,
+        "regression_loss": 0.5295101273165952,
+        "band_accuracy": 0.21862186218621862,
+        "white_accuracy": 0.21987198719871986,
+        "black_accuracy": 0.21737173717371738,
+        "elo_mae": 224.62628626143865,
+        "elo_rmse": 283.62659213634515
+      },
+      "test": {
+        "total_loss": 3.955745868680954,
+        "classification_loss": 3.823019907783581,
+        "regression_loss": 0.5309038312099745,
+        "band_accuracy": 0.22481627755836625,
+        "white_accuracy": 0.22036694495825626,
+        "black_accuracy": 0.22926561015847624,
+        "elo_mae": 224.67335934766035,
+        "elo_rmse": 284.22687355377303
+      }
+    },
+    {
+      "epoch": 13,
+      "train": {
+        "total_loss": 3.767516841542659,
+        "classification_loss": 3.638661676167284,
+        "regression_loss": 0.5154206628850818,
+        "band_accuracy": 0.22187638672741705,
+        "white_accuracy": 0.22210138813367583,
+        "black_accuracy": 0.22165138532115825,
+        "elo_mae": 221.69101943117613,
+        "elo_rmse": 278.41666076715165
+      },
+      "val": {
+        "total_loss": 4.016441933023105,
+        "classification_loss": 3.8805700353007637,
+        "regression_loss": 0.543487623222161,
+        "band_accuracy": 0.18759375937593759,
+        "white_accuracy": 0.18791879187918792,
+        "black_accuracy": 0.18726872687268728,
+        "elo_mae": 227.6991706250703,
+        "elo_rmse": 287.78844557494074
+      },
+      "test": {
+        "total_loss": 3.9785858747965452,
+        "classification_loss": 3.842932071732514,
+        "regression_loss": 0.5426151990824948,
+        "band_accuracy": 0.1916712493126031,
+        "white_accuracy": 0.18832175173723942,
+        "black_accuracy": 0.1950207468879668,
+        "elo_mae": 227.29904708629644,
+        "elo_rmse": 287.7312431501961
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-04-16T07:38:45.160693+00:00",
+  "device": "mps",
+  "best_epoch": 9,
+  "best_validation_loss": 3.9800317679444412,
+  "best_train_metrics": {
+    "total_loss": 3.8968158665334824,
+    "classification_loss": 3.76290381110386,
+    "regression_loss": 0.5356482255555616,
+    "band_accuracy": 0.21165132282076762,
+    "white_accuracy": 0.21215132594578717,
+    "black_accuracy": 0.2111513196957481,
+    "elo_mae": 226.49143723896321,
+    "elo_rmse": 284.54766929150134
+  },
+  "best_validation_metrics": {
+    "total_loss": 3.9800317679444412,
+    "classification_loss": 3.845665084134222,
+    "regression_loss": 0.5374666961363189,
+    "band_accuracy": 0.20224522452245225,
+    "white_accuracy": 0.20517051705170516,
+    "black_accuracy": 0.1993199319931993,
+    "elo_mae": 226.91282145792704,
+    "elo_rmse": 285.4580496628388
+  },
+  "best_test_metrics": {
+    "total_loss": 3.9381123748962947,
+    "classification_loss": 3.8050869461274686,
+    "regression_loss": 0.5321017557285145,
+    "band_accuracy": 0.20469429585562166,
+    "white_accuracy": 0.20851872219167125,
+    "black_accuracy": 0.20086986951957206,
+    "elo_mae": 225.04350565676867,
+    "elo_rmse": 283.98744115275616
+  },
+  "completed_epochs": 13
+}
