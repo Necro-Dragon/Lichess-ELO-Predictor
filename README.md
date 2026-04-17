@@ -89,3 +89,18 @@ March 2026 contains `90,074,196` rated standard games and `180,148,392` player-s
 | Rapid | 14,715,059 | 16.34% | 1,455.0 |
 | Classical | 569,382 | 0.63% | 1,550.4 |
 | Correspondence | 91,764 | 0.10% | 1,777.0 |
+
+## Opening UMAP Embeddings
+
+This repo now includes two opening-embedding UMAP pipelines:
+
+- `scripts/generate_opening_umap.py` / `chess_distance/opening_umap.py`
+  - Builds UMAP from the raw opening board positions.
+  - Each opening is converted from PGN into a `ChessPosition`, then UMAP is fit directly on the discrete position feature matrix.
+
+- `scripts/generate_opening_model_umap.py` / `chess_distance/opening_model_umap.py`
+  - Builds UMAP from learned model embeddings instead of raw board vectors.
+  - It loads the trained `SparseGameRatingBandModel`, passes each opening position through the model, takes the embedding from the second-to-last layer, and then fits UMAP on those model-derived vectors.
+  - The output is a graph of openings in the model’s embedding space, written to SVG/CSV/JSON artifacts.
+
+This makes it clear that the new files are not just another UMAP run, but the model-based opening embedding path using the penultimate-layer representation.
